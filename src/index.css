@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+
+  font-family: 'Inter', sans-serif;
+}
+
+body{
+  background: white;
+}
+
+li{
+  list-style: none;
+  cursor: pointer;
+  position: relative;
+}
+
+li:hover::before {
+  /* position: absolute;
+  content: '';
+  height: 4px;
+  width: 100%;
+  background: #2a68ff;
+  right: 0;
+  bottom: -10px;
+  color: #2a68ff;
+  border-radius: 4px; */
+}
+
+.navbar{
+  /* z-index: 1000; */
+  /* background-color: #fff;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  width: 85%;
+  height: 24px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+}
+
+.register:hover::before{
+  background: #4ADE80;
+  color: #4ADE80;
+}
+
+.login:hover::before{
+  background: white;
+  color: white;
+}
+
+.icon {
+  cursor: pointer;
+}
+
+
+.card {
+  background: url(/src/Assets/pattern.png);
+  /* opacity: 0.2; */
+}
