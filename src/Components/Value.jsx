@@ -9,7 +9,7 @@ const Value = () => {
 
     <div className='mb-[6rem] mt-[2rem]'>
 
-      <h1 className='text-textColor text-[25px] py-[2rem] pb-[3rem] font-bold w-[400px] block'>The value that holds us true and to account</h1>
+      <h1 className='text-greenish text-[25px] py-[2rem] pb-[3rem] font-bold w-[400px] block'>The value that holds us true and to account</h1>
 
       <div className='grid gap-[10rem] sm:grid-cols-1 lg:grid-cols-3 items-center'>
 

@@ -1,4 +1,13 @@
-import React from 'react';
+import Logo from "./Logo";
+
+
+const links = [
+  { path: '/', name: 'home' },
+  { path: '/projects', name: 'projects' },
+  // { path: '/playlist', name: 'playlist' },
+  // { path: '/about', name: 'about' },
+  { path: '/contact', name: 'contact' },
+];
 
 const Navbar = () => {
   return (
@@ -8,9 +17,9 @@ const Navbar = () => {
       <div className='flex justify-between items-center p-[1rem] text-[15px] bg-white'>
         
         <div className='logo'>
-          <h1 className='logo text-[24px] text-greenish'><strong className='font-black'>find</strong>.work</h1>
+          <Logo />
         </div>
-
+        
         <div className='menu justify-between items-center flex gap-6 font-medium'>
           <li className='menuList text-[#6f6f6f] hover:text-greenish'>Jobs</li>
           <li className='menuList text-[#6f6f6f] hover:text-greenish'>Companies</li>

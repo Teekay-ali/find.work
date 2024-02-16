@@ -6,14 +6,14 @@ import { FaCheck } from "react-icons/fa";
 
 const Search = () => {
   return (
-    <div className='search grid gap-4 bg-greyish rounded-[10px] p-[2.5rem] mb-4 mt-[7rem]'>
+    <div className='search gap-4 bg-greyish rounded-[10px] p-[2.5rem] mb-4 mt-[7rem]'>
 
       <form action="">
         <div className='flex justify-between items-center rounded-[8px] gap-[10px] bg-white p-4 shadow-sm'>
 
-          <div className='flex gap-4 items-center'>
+          <div className='flex gap-6 items-center overflow-hidden'>
             <AiOutlineSearch className='text-[20px] mx-2 icon'/>
-            <input type='text' className='bg-transparent text-brownbish focus:outline-none w-[100%]' placeholder='Job Title or Keywords' />
+            <input type='text' className='bg-transparent text-brownbish focus:outline-none w-[900px]' placeholder='Job Title or Keywords' />
           </div>
 
           <button className='bg-greenish p-2.5 px-10 rounded-[6px] text-white cursor-pointer'>Search</button>
@@ -21,7 +21,7 @@ const Search = () => {
         </div>
       </form>
 
-      <div className='sec flex items-center justify-between text-[13px] mt-4'>
+      <div className='sec flex items-center justify-between text-[13px] mt-4 overflow-hidden'>
         
         <div className='flex gap-10'>
 
@@ -29,11 +29,11 @@ const Search = () => {
           <div className='single flex items-center gap-2'>
 
             <label htmlFor="relevance" className='text-brownbish font-semibold'>
-              Sort by
+              State
             </label>
 
             <select name="relevance" id="relevance" className='bg-white rounded-[3px] px-4 py-1'>
-              <option value="" selected>-</option>
+              <option value="" selected></option>
               <option value="">Relevance</option>
               <option value="">Inclusive</option>
               <option value="">Contains</option>
@@ -50,7 +50,7 @@ const Search = () => {
             </label>
 
             <select name="type" id="type" className='bg-white rounded-[3px] px-4 py-1'>
-              <option value="" selected>-</option>
+              <option value="" selected></option>
               <option value="">Full-time</option>
               <option value="">Part-time</option>
               <option value="">Contract</option>
@@ -67,7 +67,7 @@ const Search = () => {
             </label>
 
             <select name="level" id="level" className='bg-white rounded-[3px] px-4 py-1'>
-              <option value="" selected>-</option>
+              <option value="" selected></option>
               <option value="">Junior</option>
               <option value="">Intermediate</option>
               <option value="">Senior</option>
@@ -83,7 +83,7 @@ const Search = () => {
             </label>
 
             <select name="lga" id="lga" className='bg-white rounded-[3px] px-4 py-1'>
-              <option value="">All</option>
+              <option value="" selected></option>
               <option value="">Abadam</option>
               <option value="">Askira/Uba</option>
               <option value="">Bama</option>
@@ -104,7 +104,7 @@ const Search = () => {
               <option value="">Kwaya Kusar</option>
               <option value="">Mafa</option>
               <option value="">Magumeri</option>
-              <option value="" selected>Maiduguri</option>
+              <option value="">Maiduguri</option>
               <option value="">Marte</option>
               <option value="">Mobbar</option>
               <option value="">Monguno</option>

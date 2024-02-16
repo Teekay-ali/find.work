@@ -5,7 +5,20 @@ export default {
     "./src/**/*.{js,jsx}",
   ],
   theme: {
+    container: {
+      center: true,
+      padding: "2rem",
+    },
+    screens: {
+      sm: "640px",
+      md: "768px",
+      lg: "1024px",
+      xl: "1400px",
+    },
     extend: {
+      fontFamily:{
+        // sans: ['Inter var', ...defaultTheme.fontFamily.sans],
+      },
       colors:{
         'blueish': '#2a68ff',
         'grey': '#f1f4f8',
@@ -22,4 +35,3 @@ export default {
   },
   plugins: [],
 }
-
